@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Badge from '../components/Badge.astro';
+import SocialMedia from '../components/SocialMedia.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro'
+import Briefcase from '../components/icons/Briefcase.astro'
+import Code from '../components/icons/Code.astro'
+import ExperienceSec from '../components/Experience.astro'
+import ProjectsSec from '../components/Projects.astro';
+
+---
+
+<Layout 
+	title="Portfolio. Desarrollador y Programador con 20 años de experiencia."
+	description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador y Programador Web. Especializado en crear soluciones.">
+	<main class="px-4 lg:px-0">
+		<SectionContainer class="py-20 pb-10">
+			<img class="rounded-full size-12" src="https://www.rubenmarinez.com/portfolio/images/hero.jpg" alt="MarinezDev photo" />
+
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x4 pb-2 lg:pb-6">
+				Hey, soy MarinezDev&nbsp;
+				<div class="flex justify-center items-center">
+					<a href="https://www.linkedin.com/in/ruben-marinez-dev/" target="_blank" rel="noopener" class="flex justify-center items-center">
+						<Badge>Dispobible para trabajar</Badge>
+					</a>
+				</div>
+			</h1>
+			<h2 class="text-xl md:text-1xl lg:text-2xl text-wrap max-w-[700px]">
+				<span>+20 de años de experiencia</span> <span class="text-yellow-200/90">y consultor para el manejo de clientes</span>.
+				<span class="text-red-200/90">Ciudad de México 🇲🇽</span>. <span class="opacity-70">Especializado en mantener la relacion cordian con los clientes ante la entrega continua de la solucion.</span>
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialMedia href="https://www.linkedin.com/in/ruben-marinez-dev/">
+					<LinkedInIcon class="size-4 lg:size-6" />&nbsp;LinkedIn
+				</SocialMedia>
+
+				<SocialMedia href="https://github.com/marinezdev">
+					<GitHubIcon class="size-4 lg:size-6" />&nbsp;Github
+				</SocialMedia>
+
+				<SocialMedia href="mailto:me@rubenmarinez.com?Subject=Solicitud%20de%20información">
+					<MailIcon class="size-4 lg:size-6" />&nbsp;me@rubenmarinez.com
+				</SocialMedia>
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-3xl font-semibold mb-5 flex items-center gap-x-4">
+				<Briefcase class="size-7"/>
+				Experiencia Laboral
+			</h2>
+			<ExperienceSec />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-3xl font-semibold mb-5 flex items-center gap-x-4">
+				<Code class="size-7"/>
+				Proyectos
+			</h2>
+			<ProjectsSec />
+		</SectionContainer>
+	</main>
+</Layout>
