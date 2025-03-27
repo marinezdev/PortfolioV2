@@ -40,7 +40,14 @@ const PROJECTS = [
                     </li>
                 ))}
             </ul>
-            <img class="rounded shadow-2xl shadow-white/20" src={image} alt={`Captura del proyecto ${title}`} />
+            
+            <img 
+                alt="Recién llegado vs 5 años en Nueva Zelanda" 
+                class="object-cover transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105 py-5 lg:py-15 px-3 lg:px-10 w-full h-96" 
+                loading="lazy" 
+                src={image} 
+            />
+
         </article>
     ))
 }
